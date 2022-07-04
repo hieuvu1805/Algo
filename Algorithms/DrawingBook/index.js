@@ -1,6 +1,8 @@
 const test = require("../../lib/test");
 
 /**
+ * TC: O(1)
+ * SC: O(1)
  *
  * @param {int} n : the number of pages in the book
  * @param {int} p : the page number to turn to

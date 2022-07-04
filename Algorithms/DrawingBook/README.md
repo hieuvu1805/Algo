@@ -5,9 +5,14 @@ https://www.hackerrank.com/challenges/drawing-book/problem
 ## Solution
 
 ```js
-function bonAppetit(bill, k, b) {
-  const totalBill = bill.reduce((a, b) => a + b, 0);
-  const overcharged = b - totalBill / 2 + bill[k] / 2;
-  return overcharged === 0 ? "Bon Appetit" : overcharged;
+function pageCount(n, p) {
+  const rangeLeft = p - 1;
+  const rangeRight = n - p;
+  if (rangeLeft < rangeRight) {
+    return Math.ceil(rangeLeft / 2);
+  }
+
+  const temp = rangeRight / 2;
+  return n % 2 ? Math.floor(temp) : Math.ceil(rangeLeft / 2);
 }
 ```
