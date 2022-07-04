@@ -13,3 +13,4 @@ I use this project to practice algorithm and save my solutions
 - Array
   - [New Year Chaos](/Array/NewYearChaos)
   - [Larry Array](/Array/LarryArray)
+  - [Ice Cream Parlor](/Array/IceCreamParlor)
