@@ -18,3 +18,57 @@ with `F0 = 0` and `F1 = 1`
 - [PHP](./index.php)
 - [Go](./index.go)
 - [C++](./index.cpp)
+
+```js
+// Javascript
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+function fibLoop(n) {
+  if (n < 2) {
+    return n;
+  }
+
+  let temp,
+    prev = 0,
+    cur = 1;
+
+  for (let i = 2; i <= n; i++) {
+    temp = prev + cur;
+    prev = cur;
+    cur = temp;
+  }
+  return cur;
+}
+```
+
+```php
+<?php
+function fibLoop(int $n): int {
+  if ($n < 2) {
+    return $n;
+  }
+  $temp = 1; $prev = 0; $cur = 1;
+
+  for ($i = 2; $i <= $n; $i++) {
+    $temp = $prev + $cur;
+    $prev = $cur;
+    $cur = $temp;
+  }
+  return $cur;
+}
+```
+
+```go
+// Golang
+func fibonacci(n int) int {
+	if n < 2 {
+		return n
+	}
+
+  a, b := 0, 1
+	for i := 2; i <= n; i++ {
+    a, b = b, a+b
+	}
+	return b
+}
+```

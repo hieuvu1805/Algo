@@ -11,7 +11,7 @@ func fibonacci(n int) uint64 {
 	var b uint64 = 1
 
 	for i := 2; i <= n; i++ {
-			a, b = b, a+b
+		a, b = b, a+b
 	}
 	return b
 }
