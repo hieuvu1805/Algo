@@ -16,4 +16,4 @@ Determine the `minimum number of bribes` that took place to get to a given queue
 
 `q = [1, 2, 3, 5, 4, 6, 7, 8]`
 
-If person bribes person , the queue will look like this: . Only bribe is required. Print `1`.
+If person `5` bribes person `4`, the queue will look like this: `[1, 2, 3, 4, 5, 6, 7, 8]`. Only bribe is required. Print `1`.
