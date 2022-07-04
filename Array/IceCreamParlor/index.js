@@ -21,13 +21,11 @@ function icecreamParlor(m, arr) {
 test2(
   [
     {
-      i1: 4,
-      i2: [1, 4, 5, 3, 2],
+      input: [4, [1, 4, 5, 3, 2]],
       expected: [1, 4],
     },
     {
-      i1: 4,
-      i2: [2, 2, 4, 3],
+      input: [4, [2, 2, 4, 3]],
       expected: [1, 2],
     },
   ],

@@ -1,5 +1,12 @@
 const test = require("../../lib/test");
 
+/**
+ * TC: O(1)
+ * SC: O(1)
+ *
+ * @param {int} year
+ * @returns
+ */
 function dayOfProgrammerSpecify(year) {
   // 243 is 1st September (normal year)
   let day = 256 - 243;
