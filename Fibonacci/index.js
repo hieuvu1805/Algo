@@ -1,3 +1,5 @@
+const test = require("../lib/test");
+
 /*
 TC: O(2^n)
 SC: O(n) => stack size
@@ -86,15 +88,8 @@ const testCases = [
   { input: 1000, expected: 4.346655768693743e208 },
 ];
 
-const testFunc = fibLoop; // fibRecursionDynamic, fibLoop, fibFormula
-testCases.every(({ input, expected }) => {
-  if (testFunc(input) !== expected) {
-    console.error(`failed: n = ${input}`);
-    return false;
-  }
-  console.log(`success: n = ${input}`);
-  return true;
-});
+// fibRecursionDynamic, fibLoop, fibFormula
+test(testCases, fibLoop);
 
 /*
 Detecting when N is a Fibonacci Number (https://r-knott.surrey.ac.uk/Fibonacci/fibFormula.html#section5)
