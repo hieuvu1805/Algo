@@ -1,4 +1,4 @@
-const test2 = require("../../lib/test2");
+const test = require("../../lib/test");
 
 /**
  * TC: O(n) => calculate total bill
@@ -26,4 +26,4 @@ const testCases = [
   },
 ];
 
-test2(testCases, bonAppetit);
+test(testCases, bonAppetit);

@@ -48,23 +48,23 @@ function fomat(n) {
 
 const testCases = [
   {
-    input: 1984,
+    input: [1984],
     expected: "12.09.1984",
   },
   {
-    input: 2017,
+    input: [2017],
     expected: "13.09.2017",
   },
   {
-    input: 2016,
+    input: [2016],
     expected: "12.09.2016",
   },
   {
-    input: 1800,
+    input: [1800],
     expected: "12.09.1800",
   },
   {
-    input: 1918,
+    input: [1918],
     expected: "26.09.1918",
   },
 ];

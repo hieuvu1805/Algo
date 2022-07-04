@@ -1,0 +1,11 @@
+{
+  "name": "algo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hieuvu1805/Algo.git",
+  "author": "Hieu Vu",
+  "license": "MIT",
+  "scripts": {
+    "test": "./lib/test.sh"
+  }
+}

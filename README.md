@@ -16,3 +16,5 @@ I use this project to practice algorithm and save my solutions
   - [Ice Cream Parlor](/Array/IceCreamParlor)
 - Algorithms
   - [Day of the Programmer](/Algorithms/DayOfTheProgrammer/)
+  - [Bill Division](/Algorithms/BillDivision/)
+  - [Drawing Book](/Algorithms/DrawingBook)

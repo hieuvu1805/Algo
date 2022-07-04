@@ -1,4 +1,4 @@
-const test2 = require("../../lib/test2");
+const test = require("../../lib/test");
 
 /**
  * TC: best case O(1), worst case O(n^2)
@@ -18,7 +18,7 @@ function icecreamParlor(m, arr) {
   }
 }
 
-test2(
+test(
   [
     {
       input: [4, [1, 4, 5, 3, 2]],

@@ -45,23 +45,23 @@ function minimumBribes(q) {
 
 const testCases = [
   {
-    input: [1, 2, 3, 5, 4, 6, 7, 8],
+    input: [[1, 2, 3, 5, 4, 6, 7, 8]],
     expected: 1,
   },
   {
-    input: [4, 1, 2, 3],
+    input: [[4, 1, 2, 3]],
     expected: "Too chaotic",
   },
   {
-    input: [2, 1, 5, 3, 4],
+    input: [[2, 1, 5, 3, 4]],
     expected: 3,
   },
   {
-    input: [2, 5, 1, 3, 4],
+    input: [[2, 5, 1, 3, 4]],
     expected: "Too chaotic",
   },
   {
-    input: [1, 2, 5, 3, 7, 8, 6, 4],
+    input: [[1, 2, 5, 3, 7, 8, 6, 4]],
     expected: 7,
   },
 ];
