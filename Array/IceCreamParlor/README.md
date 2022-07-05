@@ -30,3 +30,27 @@ icecreamParlor has the following parameter(s):
 ## Returns
 
 - int[2]: the indices of the prices of the two flavors they buy, sorted ascending
+
+## Solution
+
+```js
+/**
+ * TC: best case O(1), worst case O(n^2)
+ * SC: O(1)
+ *
+ * @param {int} m
+ * @param {Array} arr
+ * @returns
+ */
+function icecreamParlor(m, arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === m) {
+        // return directly because prices arr is sorted
+        // so first found is smallest pair of index flavors cost []
+        return [i + 1, j + 1];
+      }
+    }
+  }
+}
+```
