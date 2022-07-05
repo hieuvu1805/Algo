@@ -21,3 +21,4 @@ I use this project to practice algorithm and save my solutions
   - [Drawing Book](/Algorithms/DrawingBook)
   - [Minimum Distances](/Algorithms/MinimumDistances/)
   - [Viral Advertising](/Algorithms/ViralAdvertising/)
+  - [Angry Professor](/Algorithms/AngryProfessor/)

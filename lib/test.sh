@@ -6,3 +6,4 @@ node Algorithms/DayOfTheProgrammer
 node Algorithms/DrawingBook
 node Algorithms/TheBombermanGame
 node Algorithms/MinimumDistances
+node Algorithms/AngryProfessor
