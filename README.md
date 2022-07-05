@@ -20,3 +20,4 @@ I use this project to practice algorithm and save my solutions
   - [Bill Division](/Algorithms/BillDivision/)
   - [Drawing Book](/Algorithms/DrawingBook)
   - [Minimum Distances](/Algorithms/MinimumDistances/)
+  - [Viral Advertising](/Algorithms/ViralAdvertising/)
