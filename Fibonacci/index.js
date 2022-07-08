@@ -81,11 +81,11 @@ function fibFormula(n) {
 // console.timeEnd("fibFormula");
 
 const testCases = [
-  { input: 0, expected: 0 },
-  { input: 1, expected: 1 },
-  { input: 2, expected: 1 },
-  { input: 65, expected: 17167680177565 },
-  { input: 1000, expected: 4.346655768693743e208 },
+  { input: [0], expected: 0 },
+  { input: [1], expected: 1 },
+  { input: [2], expected: 1 },
+  { input: [65], expected: 17167680177565 },
+  { input: [1000], expected: 4.346655768693743e208 },
 ];
 
 // fibRecursionDynamic, fibLoop, fibFormula

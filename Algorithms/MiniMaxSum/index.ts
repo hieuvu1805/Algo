@@ -6,7 +6,7 @@ const test = require("../../lib/test");
  *
  * @param {Array<int>} arr
  */
-function miniMaxSum(arr) {
+function miniMaxSum(arr: number[]): [number, number] {
   if (arr.length === 0) {
     return [0, 0];
   }

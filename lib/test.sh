@@ -1,9 +1,8 @@
-node Array/NewYearChaos
-node Array/LarryArray
-node Array/IceCreamParlor
-node Algorithms/BillDivision
-node Algorithms/DayOfTheProgrammer
-node Algorithms/DrawingBook
-node Algorithms/TheBombermanGame
-node Algorithms/MinimumDistances
-node Algorithms/AngryProfessor
+node Fibonacci
+for dir in 'Array' 'Algorithms'
+do
+  for path in "$dir"/*
+  do
+    ts-node "$path"
+  done
+done
