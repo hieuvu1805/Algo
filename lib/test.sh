@@ -1,5 +1,7 @@
 node Fibonacci
-for dir in 'Array' 'Algorithms'
+ts-node SortAlgorithms
+
+for dir in 'Array' 'Algorithms' 
 do
   for path in "$dir"/*
   do
