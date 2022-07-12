@@ -1,5 +1,7 @@
 const test = require("../lib/test");
-import mergeSortFunc from "./MergeSort";
+import selectionSort from "./SelectionSort";
+import bubbleSort from "./BubbleSort";
+import mergeSort from "./MergeSort";
 
 const testCases = [
   {
@@ -15,6 +17,10 @@ const testCases = [
     expected: [1, 1],
   },
   {
+    input: [[1, 2, 3]],
+    expected: [1, 2, 3],
+  },
+  {
     input: [[1, 3, 2]],
     expected: [1, 2, 3],
   },
@@ -24,10 +30,15 @@ const testCases = [
   },
 ];
 
-function mergeSort(arr: number[]) {
+function sort(arr: number[], sortFunc: Function) {
   const copyArr = [...arr];
-  mergeSortFunc(copyArr);
+  sortFunc(copyArr);
   return copyArr;
 }
 
-test(testCases, mergeSort);
+console.log("Sort Algorithms: selectionSort");
+test(testCases, (arr: number[]) => sort(arr, selectionSort));
+console.log("Sort Algorithms: bubbleSort");
+test(testCases, (arr: number[]) => sort(arr, bubbleSort));
+console.log("Sort Algorithms: mergeSort");
+test(testCases, (arr: number[]) => sort(arr, mergeSort));

@@ -14,7 +14,7 @@ function larrysArray(A: number[]): "YES" | "NO" {
     for (let j: number = 0; j < A.length - i - 2; j++) {
       if (A[j + 2] < A[j] || A[j + 2] < A[j + 1]) {
         isRotated = true;
-        A.rotate(j, A[j + 1] < A[j]);
+        rotate(A, j, A[j + 1] < A[j]);
       }
     }
     if (!isRotated) break;
@@ -22,24 +22,17 @@ function larrysArray(A: number[]): "YES" | "NO" {
   return isArraySorted(A) ? "YES" : "NO";
 }
 
-interface Array<T> {
-  rotate(x: number, firstBigger: boolean): Array<T>;
-}
-
-if (!Array.prototype.rotate) {
-  Array.prototype.rotate = function <T>(x: number, firstBigger: boolean = true): T[] {
-    const temp = this[x];
-    if (firstBigger) {
-      this[x] = this[x + 1];
-      this[x + 1] = this[x + 2];
-      this[x + 2] = temp;
-    } else {
-      this[x] = this[x + 2];
-      this[x + 2] = this[x + 1];
-      this[x + 1] = temp;
-    }
-    return this;
-  };
+function rotate(A: number[], x: number, firstBigger: boolean = true): void {
+  const temp = A[x];
+  if (firstBigger) {
+    A[x] = A[x + 1];
+    A[x + 1] = A[x + 2];
+    A[x + 2] = temp;
+  } else {
+    A[x] = A[x + 2];
+    A[x + 2] = A[x + 1];
+    A[x + 1] = temp;
+  }
 }
 
 function isArraySorted(A: number[]): boolean {
