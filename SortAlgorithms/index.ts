@@ -1,6 +1,7 @@
 const test = require("../lib/test");
 import selectionSort from "./SelectionSort";
 import bubbleSort from "./BubbleSort";
+import insertionSort from "./InsertionSort";
 import mergeSort from "./MergeSort";
 
 const testCases = [
@@ -42,3 +43,5 @@ console.log("Sort Algorithms: bubbleSort");
 test(testCases, (arr: number[]) => sort(arr, bubbleSort));
 console.log("Sort Algorithms: mergeSort");
 test(testCases, (arr: number[]) => sort(arr, mergeSort));
+console.log("Sort Algorithms: insertionSort");
+test(testCases, (arr: number[]) => sort(arr, insertionSort));

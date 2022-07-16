@@ -1,3 +1,5 @@
+import { swap } from "../lib/arrayHelpers";
+
 /**
  * TC: O(n) | O(n^2)
  * SC: O(1)
@@ -16,10 +18,4 @@ export default function bubbleSort(arr: number[]): void {
     }
     if (!swapped) break;
   }
-}
-
-function swap(arr: number[], x: number, y: number): void {
-  let temp = arr[x];
-  arr[x] = arr[y];
-  arr[y] = temp;
 }

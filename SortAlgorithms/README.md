@@ -3,8 +3,11 @@
 ## Table of Contents
 
 1. [Selection Sort](#selection-sort)
-1. [Bubble Sort](#buble-sort)
+1. [Bubble Sort](#bubble-sort)
+1. [Insertion Sort](#insertion-sort)
 1. [Merge Sort](#merge-sort)
+
+---
 
 ## Selection Sort
 
@@ -22,6 +25,8 @@ The `Selection sort` sorts an array by repeatedly finding the minimum element fr
 
 ### Space Complexity: `O(1)`
 
+---
+
 ## Bubble Sort
 
 `Bubble Sort` is works by repeatedly swapping the adjacent elements if they are in the wrong order. Move the largest number to the end of array
@@ -38,6 +43,27 @@ The `Selection sort` sorts an array by repeatedly finding the minimum element fr
 - Worst: `O(n^2)`
 
 ### Space Complexity: `O(1)`
+
+---
+
+## Insertion Sort
+
+`Insertion sort` works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+...
+
+### Solutions: [Insertion Sort](InsertionSort.ts)
+
+### Stable: `Yes`
+
+### Time Complexity:
+
+- Best: `O(n)`
+- Average: `O(n^2)`
+- Worst: `O(n^2)`
+
+### Space Complexity: `O(1)`
+
+---
 
 ## Merge Sort
 
